@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calc" role="application" aria-label="Calculator">
+    <div class="display" aria-live="polite" aria-atomic="true">
+      <div class="expr" id="expr"></div>
+      <div class="value" id="value">0</div>
+    </div>
+
+    <div class="keys" id="keys">
+      <!-- Top row -->
+      <button data-key="C" class="accent">C</button>
+      <button data-key="DEL" class="accent">⌫</button>
+      <button data-key="%" class="accent">%</button>
+      <button data-key="÷" class="op">÷</button>
+
+      <!-- 7 8 9 × -->
+      <button data-key="7">7</button>
+      <button data-key="8">8</button>
+      <button data-key="9">9</button>
+      <button data-key="×" class="op">×</button>
+
+      <!-- 4 5 6 − -->
+      <button data-key="4">4</button>
+      <button data-key="5">5</button>
+      <button data-key="6">6</button>
+      <button data-key="−" class="op">−</button>
+
+      <!-- 1 2 3 ＋ -->
+      <button data-key="1">1</button>
+      <button data-key="2">2</button>
+      <button data-key="3">3</button>
+      <button data-key="＋" class="op">＋</button>
+
+      <!-- 0 . = (full width on =) -->
+      <button data-key="0" class="zero">0</button>
+      <button data-key=".">.</button>
+      <button data-key="=" class="equals">=</button>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
